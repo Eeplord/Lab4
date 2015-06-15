@@ -7,7 +7,7 @@ all: main
 main : Main.o
 	$(CC) $(CFLAGS) Main.o $(LDFLAGS) -o main
 
-Main.o : Main.cpp
+Main.o : Main.cpp DataChecks.h
 	$(CC) $(CFLAGS) -c Main.cpp
 
 clean:
