@@ -25,9 +25,16 @@ int main()
 		}
 		else if(count <= 6)
 		{
-
+			checkDouble(input);
 		}
-		std::cout << input << std::endl;
+		else if(count <= 8)
+		{
+			checkAlpha(input);
+		}
+		else
+		{
+			checkState(input);
+		}
 
 		count++;
 	}
